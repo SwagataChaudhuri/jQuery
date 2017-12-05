@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    /*JavaSript Timeout Function*/
     setTimeout(
         function () {
             $("#testMessage").slideUp("slow");
