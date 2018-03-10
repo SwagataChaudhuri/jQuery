@@ -35,6 +35,7 @@ $(document).ready(function () {
     catch (error) { }
 
     newFunction();
+    hello();
     //window.setInterval(alertModule, 1000);
 });
 function newFunction() {
@@ -53,4 +54,9 @@ function alertModule() {
 }
 function a() {
     a();
+}
+function hello() {
+    var re1 = "Swagata";
+    var re2 = "Chaudhuri";
+    alert(re1 + " " + re2);
 }
