@@ -29,4 +29,28 @@ $(document).ready(function () {
     $("#message2").dblclick(function () {
         alert('I am double clicked!!!');
     });
+    try {
+        a();
+    }
+    catch (error) { }
+
+    newFunction();
+    //window.setInterval(alertModule, 1000);
 });
+function newFunction() {
+    if ($(".mainDiv").has("p")) {
+        $(".mainDiv p").each(function () {
+            console.info(this.innerText);
+        });
+        $.each([1, 2, 3], function (a, b) {
+            console.info(a + " : " + b);
+        });
+    }
+    //setTimeout(newFunction, 1000);
+}
+function alertModule() {
+    console.log(Date());
+}
+function a() {
+    a();
+}
